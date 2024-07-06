@@ -13,32 +13,32 @@ const Everything = () => {
     {
       img: html,
       title: "HTML and CSS",
-      desc: "Tailor Anima's Landing Page UI Kit to your unique style and brand with customisable components, in no time!",
+      desc: "Master the building blocks of the web. Learn to create stunning, responsive websites using HTML and CSS.",
     },
     {
       img: javascript,
       title: "JavaScript",
-      desc: "No need to worry about screen size. Anima's Landing Page UI Kit adapts to any screen size, from desktop to mobile.",
+      desc: "Unlock the power of dynamic web development. Dive into JavaScript and build interactive, engaging web applications.",
     },
     {
       img: solidity,
       title: "Solidity",
-      desc: "Zero coding skills required, Anima's Landing Page UI Kit empowers you to create stunning landing pages with ease.",
+      desc: "Step into the world of blockchain. Learn Solidity to create smart contracts and decentralized applications.",
     },
     {
       img: ethereum,
       title: "Ethereum",
-      desc: "Tailor Anima's Landing Page UI Kit to your unique style and brand with customisable components, in no time!",
+      desc: "Explore the leading blockchain platform. Gain expertise in Ethereum to develop secure and scalable decentralized applications.",
     },
     {
       img: reactcopy,
       title: "React",
-      desc: "No need to worry about screen size. Anima's Landing Page UI Kit adapts to any screen size, from desktop to mobile.",
+      desc: "Build modern web applications with ease. Learn React, the popular JavaScript library for creating dynamic user interfaces.",
     },
     {
       img: solana,
       title: "Solana",
-      desc: "Zero coding skills required, Anima's Landing Page UI Kit empowers you to create stunning landing pages with ease.",
+      desc: "Harness the potential of high-speed blockchain technology. Learn to develop on Solana for fast and efficient decentralized solutions.",
     },
   ];
   return (
