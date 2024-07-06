@@ -1,0 +1,23 @@
+header {
+  display: flex;
+  padding: 15px 60px 50px;
+  flex-direction: column;
+  gap: 100px;
+  background-color: #fff;
+}
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+}
+
+ul,
+.nav-links {
+  display: flex;
+  align-items: center;
+  gap: 32px;
+}
+ul {
+  list-style: none;
+}

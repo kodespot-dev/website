@@ -1,0 +1,225 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Mulish:ital,wght@0,200..1000;1,200..1000&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  color: #212353;
+}
+
+body {
+  font-family: poppins, sans-serif;
+  background: #f8f9ff;
+}
+a {
+  font-weight: 500;
+  color: #4b5d68;
+  text-decoration: inherit;
+}
+a:hover {
+  color: #212353;
+}
+
+body {
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-size: 4.2rem;
+  font-weight: 700;
+  line-height: 130%;
+}
+h2 {
+  font-size: 2.37rem;
+  line-height: 130%;
+  font-weight: 700;
+}
+h3 {
+  color: #212353;
+  text-align: center;
+  font-size: 1.8rem;
+  font-weight: 600;
+  line-height: 130%;
+  letter-spacing: -0.28px;
+}
+button {
+  display: flex;
+  padding: 16px 30px;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 8px;
+  font-family: inherit;
+  background-color: #ccac00;
+  color: #212353;
+  text-align: center;
+  font-weight: 600;
+  border-radius: 20px;
+  border: 1px solid #ccac00;
+  cursor: pointer;
+  transition: border-color 0.25s;
+}
+button:hover {
+  border-color: #ccac00;
+}
+button:focus,
+button:focus-visible {
+  outline: 4px auto -webkit-focus-ring-color;
+}
+button.btn {
+  background: #fff;
+}
+#reverse {
+  flex-direction: row-reverse;
+}
+.medium {
+  display: none;
+}
+.menu {
+  display: none;
+}
+
+.row {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(330px, 1fr));
+  gap: 32px;
+  width: 100%;
+  max-width: 1200px;
+}
+
+@media (max-width: 1024px) {
+  #logo .large {
+    display: none;
+  }
+  #logo {
+    width: auto;
+  }
+  #logo .medium {
+    display: block;
+    width: 70px;
+  }
+  section.what-we-do,
+  section.everything,
+  section.about,
+  section.testimonial,
+  section.support {
+    padding: 150px 20px;
+  }
+  header,
+  footer {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+@media (max-width: 800px) {
+  h1 {
+    font-size: 2.5rem;
+  }
+  h2 {
+    font-size: 1.5rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .hero-text p {
+    font-size: 1.125rem;
+  }
+  .about p,
+  .support p {
+    font-size: 1.2rem;
+  }
+  footer .brand {
+    flex-shrink: 1;
+  }
+  section.what-we-do,
+  section.everything,
+  section.about,
+  section.testimonial,
+  section.support {
+    padding: 70px 20px;
+  }
+
+  /* Mobile menu */
+  .menu {
+    display: block;
+    width: 35px;
+  }
+  .menu-links {
+    position: fixed;
+    display: flex;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    transform: translateX(-100%);
+    transition: transform 0.1s ease-in-out;
+    color: #fff;
+    background-color: rgba(204, 172, 0, 0.2);
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  .menu-links.show {
+    transform: translateX(0);
+  }
+  .menu-links ul {
+    width: 320px;
+    background-color: #fff;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+    padding: 30px;
+  }
+  .menu-links ul button {
+    background-color: transparent;
+  }
+  .menu-links #logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .menu-links #logo img {
+    width: 150px;
+  }
+  .menu img {
+    width: 35px;
+  }
+  .menu-links #logo .close {
+    width: 40px;
+  }
+  .about p,
+  .support p {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 500px) {
+  header {
+    gap: 50px;
+  }
+  header,
+  footer {
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+  h1 {
+    font-size: 1.85rem;
+  }
+  .about p,
+  .support p {
+    font-size: 1rem;
+  }
+  .hero-text p {
+    font-size: 1.1rem;
+  }
+  section.what-we-do,
+  section.everything,
+  section.about,
+  section.testimonial,
+  section.support {
+    padding: 70px 10px;
+  }
+}

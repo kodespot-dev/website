@@ -1,0 +1,15 @@
+section.support {
+  display: flex;
+  padding: 150px 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 48px;
+}
+.support p {
+  color: #4b5d68;
+  text-align: center;
+  font-family: Poppins;
+  font-size: 2.5rem;
+  font-weight: 400;
+  line-height: 150%;
+}

@@ -1,0 +1,10 @@
+section.community {
+  display: flex;
+  padding: 150px 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 48px;
+  background: #6468a6;
+  text-align: center;
+}

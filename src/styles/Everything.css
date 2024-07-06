@@ -1,0 +1,17 @@
+section.everything {
+  display: flex;
+  padding: 48px 60px;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  gap: 48px;
+  background: #6468a6;
+}
+.everything h2 {
+  color: #fff;
+}
+.everything a {
+  color: #212353;
+  font-weight: 600;
+}
